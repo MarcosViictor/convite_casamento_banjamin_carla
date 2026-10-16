@@ -30,6 +30,8 @@ body {
   background-image: radial-gradient(circle at 50% 20%, #F5F7F3 0%, #E5EAE1 100%);
   color: var(--text-dark);
   font-family: var(--font-serif);
+  font-variant-numeric: lining-nums;
+  font-feature-settings: "lnum" 1;
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -258,10 +260,12 @@ body {
 }
 
 .event-date {
-  font-size: 1.05rem;
+  font-family: 'Cinzel', var(--font-serif);
+  font-size: 1.08rem;
   font-weight: 700;
-  letter-spacing: 0.14em;
-  color: var(--olive-primary);
+  font-variant-numeric: lining-nums tabular-nums;
+  letter-spacing: 0.12em;
+  color: var(--olive-dark);
   margin-bottom: 20px;
 }
 
