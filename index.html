@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benjamin & Carla | Convite de Casamento</title>
+  <meta name="description" content="Convite de casamento de Benjamin & Carla - 09 de Janeiro de 2027 às 16h." />
+  <meta property="og:title" content="Benjamin & Carla | Convite de Casamento" />
+  <meta property="og:description" content="09 de Janeiro de 2027 às 16h - Barbalha, CE. Confirme sua presença!" />
+  <meta property="og:image" content="assets/convite-base.jpg" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="page-wrapper">
+    <!-- Cartão do Convite -->
+    <article class="invitation-card">
+      <!-- Moldura Interna Elegante -->
+      <div class="card-frame">
+        
+        <!-- Ilustração Floral Superior Esquerda (Extraída/Fiel ao convite original) -->
+        <div class="floral-corner floral-top-left" aria-hidden="true"></div>
+
+        <!-- Ilustração Floral Inferior Direita -->
+        <div class="floral-corner floral-bottom-right" aria-hidden="true"></div>
+
+        <!-- Versículo Topo Direita -->
+        <header class="verse-section">
+          <p class="verse-text">
+            ACIMA DE TUDO, PORÉM, REVISTAM-<br />
+            SE DO AMOR, QUE É O ELO PERFEITO.
+          </p>
+          <p class="verse-ref">COLOSSENSES 3:14</p>
+        </header>
+
+        <!-- Nomes dos Noivos -->
+        <section class="couple-section">
+          <h1 class="couple-names">
+            <span class="name">Benjamin</span>
+            <span class="ampersand">&amp;</span>
+            <span class="name">Carla</span>
+          </h1>
+        </section>
+
+        <!-- Detalhes do Evento -->
+        <section class="details-section">
+          <p class="invite-phrase">
+            JUNTAMENTE COM SEUS PAIS<br />
+            CONVIDAM PARA O SEU CASAMENTO
+          </p>
+
+          <p class="realizar-se">A REALIZAR-SE</p>
+
+          <p class="event-date">09 DE JANEIRO DE 2027 | 16H</p>
+
+          <p class="event-location">
+            RUA MANOEL JOSÉ VITORINO, 255 -<br />
+            BARBALHA, CE - SÍTIO LAGOA
+          </p>
+        </section>
+
+        <!-- Divisor Suave -->
+        <div class="section-divider" aria-hidden="true">
+          <span class="divider-leaf">❦</span>
+        </div>
+
+        <!-- Seção de Ícones Interativos (Parte 2 integrada ao cartão) -->
+        <section class="actions-section" aria-label="Ações do Convite">
+          <div class="actions-grid">
+            
+            <!-- Botão 1: Como Chegar -->
+            <a href="https://maps.app.goo.gl/qfYZh7V7ai3g5nGN8" target="_blank" rel="noopener noreferrer" class="action-item" id="btn-maps">
+              <div class="icon-circle">
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="action-svg">
+                  <path d="M32 8C20.954 8 12 16.954 12 28C12 42.5 32 56 32 56C32 56 52 42.5 52 28C52 16.954 43.046 8 32 8Z" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <circle cx="32" cy="27" r="8.5" stroke="currentColor" stroke-width="2.6"/>
+                </svg>
+              </div>
+              <span class="action-label">COMO CHEGAR</span>
+            </a>
+
+            <!-- Botão 2: Confirmação de Presença -->
+            <button type="button" class="action-item action-btn" id="btn-rsvp" aria-haspopup="dialog">
+              <div class="icon-circle">
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="action-svg">
+                  <rect x="10" y="16" width="44" height="32" rx="4" stroke="currentColor" stroke-width="2.6"/>
+                  <path d="M11 18L32 34L53 18" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11 46L25 32" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+                  <path d="M53 46L39 32" stroke="currentColor" stroke-width="2.6" stroke-linecap="round"/>
+                </svg>
+              </div>
+              <span class="action-label">CONFIRMAÇÃO<br />DE PRESENÇA</span>
+            </button>
+
+            <!-- Botão 3: Lista de Presentes -->
+            <a href="#presentes" class="action-item" id="btn-gifts">
+              <div class="icon-circle">
+                <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="action-svg">
+                  <!-- Globo Central -->
+                  <circle cx="32" cy="32" r="13" stroke="currentColor" stroke-width="2"/>
+                  <ellipse cx="32" cy="32" rx="6.5" ry="13" stroke="currentColor" stroke-width="1.8"/>
+                  <line x1="19" y1="32" x2="45" y2="32" stroke="currentColor" stroke-width="1.8"/>
+                  <line x1="21" y1="26" x2="43" y2="26" stroke="currentColor" stroke-width="1.5"/>
+                  <line x1="21" y1="38" x2="43" y2="38" stroke="currentColor" stroke-width="1.5"/>
+                  <!-- Órbita pontilhada -->
+                  <circle cx="32" cy="32" r="18.5" stroke="currentColor" stroke-width="1.4" stroke-dasharray="3 3"/>
+                  <!-- Pequenos corações ao redor -->
+                  <path d="M32 10.5C31.2 9.5 29.7 9.5 29 10.4C28.3 11.3 29 12.6 32 14.3C35 12.6 35.7 11.3 35 10.4C34.3 9.5 32.8 9.5 32 10.5Z" fill="currentColor"/>
+                  <path d="M32 53.5C31.2 52.5 29.7 52.5 29 53.4C28.3 54.3 29 55.6 32 57.3C35 55.6 35.7 54.3 35 53.4C34.3 52.5 32.8 52.5 32 53.5Z" fill="currentColor"/>
+                  <path d="M13 30.5C12.2 29.5 10.7 29.5 10 30.4C9.3 31.3 10 32.6 13 34.3C16 32.6 16.7 31.3 16 30.4C15.3 29.5 13.8 29.5 13 30.5Z" fill="currentColor"/>
+                  <path d="M51 30.5C50.2 29.5 48.7 29.5 48 30.4C47.3 31.3 48 32.6 51 34.3C54 32.6 54.7 31.3 54 30.4C53.3 29.5 51.8 29.5 51 30.5Z" fill="currentColor"/>
+                  <path d="M18.5 17C17.7 16 16.2 16 15.5 16.9C14.8 17.8 15.5 19.1 18.5 20.8C21.5 19.1 22.2 17.8 21.5 16.9C20.8 16 19.3 16 18.5 17Z" fill="currentColor"/>
+                  <path d="M45.5 17C44.7 16 43.2 16 42.5 16.9C41.8 17.8 42.5 19.1 45.5 20.8C48.5 19.1 49.2 17.8 48.5 16.9C47.8 16 46.3 16 45.5 17Z" fill="currentColor"/>
+                  <path d="M18.5 44C17.7 43 16.2 43 15.5 43.9C14.8 44.8 15.5 46.1 18.5 47.8C21.5 46.1 22.2 44.8 21.5 43.9C20.8 43 19.3 43 18.5 44Z" fill="currentColor"/>
+                  <path d="M45.5 44C44.7 43 43.2 43 42.5 43.9C41.8 44.8 42.5 46.1 45.5 47.8C48.5 46.1 49.2 44.8 48.5 43.9C47.8 43 46.3 43 45.5 44Z" fill="currentColor"/>
+                </svg>
+              </div>
+              <span class="action-label">LISTA DE<br />PRESENTES</span>
+            </a>
+
+          </div>
+
+          <div class="hint-pill">
+            Clique nos ícones para acessar
+          </div>
+        </section>
+
+      </div>
+    </article>
+  </main>
+
+  <!-- Modal de Confirmação de Presença (RSVP) -->
+  <div class="modal-overlay" id="rsvp-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button type="button" class="modal-close" id="modal-close" aria-label="Fechar janela">&times;</button>
+      
+      <div class="modal-header">
+        <span class="modal-subtitle">BENJAMIN &amp; CARLA</span>
+        <h2 id="modal-title" class="modal-title">Confirmação de Presença</h2>
+        <p class="modal-desc">Ficaremos muito felizes em celebrar este momento especial com você!</p>
+      </div>
+
+      <form id="rsvp-form" class="rsvp-form">
+        <div class="form-group">
+          <label class="form-label">Você vai participar do casamento? *</label>
+          <div class="attendance-options" role="radiogroup" aria-label="Você vai participar do casamento?">
+            <label class="radio-card">
+              <input type="radio" name="participar" value="Sim" checked />
+              <span>Sim, estarei presente</span>
+            </label>
+            <label class="radio-card">
+              <input type="radio" name="participar" value="Não" />
+              <span>Não poderei ir</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="guest-name" class="form-label">Seu Nome Completo *</label>
+          <input
+            type="text"
+            id="guest-name"
+            name="nome"
+            class="form-input"
+            placeholder="Ex: Maria Oliveira Silva"
+            required
+            autocomplete="name"
+          />
+        </div>
+
+        <div class="form-group" id="companions-group">
+          <div class="companions-header">
+            <label class="form-label">Acompanhantes (Opcional)</label>
+            <button type="button" class="btn-add-companion" id="btn-add-companion">
+              + Adicionar acompanhante
+            </button>
+          </div>
+          <p class="form-helper">Caso vá levar cônjuge ou filhos convidados, adicione o nome de cada um abaixo:</p>
+          
+          <div id="companions-list" class="companions-list">
+            <!-- Inputs dinâmicos de acompanhantes entram aqui -->
+          </div>
+        </div>
+
+        <div id="form-feedback" class="form-feedback" hidden></div>
+
+        <button type="submit" class="btn-submit" id="btn-submit">
+          <span class="btn-text">Confirmar Presença</span>
+          <span class="btn-spinner" hidden></span>
+        </button>
+      </form>
+
+      <!-- Estado de Sucesso após confirmação -->
+      <div id="rsvp-success" class="rsvp-success" hidden>
+        <div class="success-icon">✓</div>
+        <h3 class="success-title">Presença Confirmada!</h3>
+        <p class="success-text">Muito obrigado por confirmar! Esperamos por você no dia <strong>09 de Janeiro de 2027 às 16h</strong>.</p>
+        <button type="button" class="btn-submit btn-secondary" id="btn-done">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal / Aviso Lista de Presentes (enquanto não tem o link final) -->
+  <div class="modal-overlay" id="gifts-modal" aria-hidden="true" role="dialog" aria-labelledby="gifts-title">
+    <div class="modal-card modal-small">
+      <button type="button" class="modal-close" id="gifts-close" aria-label="Fechar janela">&times;</button>
+      <div class="modal-header">
+        <span class="modal-subtitle">BENJAMIN &amp; CARLA</span>
+        <h2 id="gifts-title" class="modal-title">Lista de Presentes</h2>
+        <p class="modal-desc" id="gifts-desc">A nossa lista de presentes estará disponível em breve!</p>
+      </div>
+      <button type="button" class="btn-submit btn-secondary" id="gifts-ok">Entendi</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
