@@ -75,7 +75,7 @@
           <div class="actions-grid">
             
             <!-- Botão 1: Como Chegar -->
-            <a href="https://maps.app.goo.gl/qfYZh7V7ai3g5nGN8" target="_blank" rel="noopener noreferrer" class="action-item" id="btn-maps">
+            <a href="https://maps.app.goo.gl/zgSXrGb25TAKiPYe7" target="_blank" rel="noopener noreferrer" class="action-item" id="btn-maps">
               <div class="icon-circle">
                 <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="action-svg">
                   <path d="M32 8C20.954 8 12 16.954 12 28C12 42.5 32 56 32 56C32 56 52 42.5 52 28C52 16.954 43.046 8 32 8Z" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
@@ -99,7 +99,7 @@
             </button>
 
             <!-- Botão 3: Lista de Presentes -->
-            <a href="#presentes" class="action-item" id="btn-gifts">
+            <a href="https://www.amazon.com.br/hz/wishlist/dl/invite/AQICAHild4Vpadjqcz7bdgUf6Qu6-OaRt7P_FJRNNbyMlg-OQwERYRo4Jgj8oCfaAwMu17UWAAAAkTCBjgYJKoZIhvcNAQcGoIGAMH4CAQAweQYJKoZIhvcNAQcBMB4GCWCGSAFlAwQBLjARBAz9tMyRRaO_UmS7d_4CARCATNVV-Lq83ngC-df7w8NAXlR64DToVjTMSXGu3PtQ3ApSbi1sEOms73CLmMB4ESND5sRCs-RA15i_SaUpb8Yl2hsTrW4-9EcpFZhusAM?ref_=wl_share" target="_blank" rel="noopener noreferrer" class="action-item" id="btn-gifts">
               <div class="icon-circle">
                 <svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="action-svg">
                   <!-- Globo Central -->
@@ -146,51 +146,45 @@
         <p class="modal-desc">Ficaremos muito felizes em celebrar este momento especial com você!</p>
       </div>
 
-      <form id="rsvp-form" class="rsvp-form">
-        <div class="form-group">
-          <label class="form-label">Você vai participar do casamento? *</label>
-          <div class="attendance-options" role="radiogroup" aria-label="Você vai participar do casamento?">
-            <label class="radio-card">
-              <input type="radio" name="participar" value="Sim" checked />
-              <span>Sim, estarei presente</span>
-            </label>
-            <label class="radio-card">
-              <input type="radio" name="participar" value="Não" />
-              <span>Não poderei ir</span>
-            </label>
+      <form id="rsvp-form" class="rsvp-form" autocomplete="off">
+        <!-- Etapa 1: Buscar o nome na lista de convidados -->
+        <div class="form-group" id="search-step">
+          <label for="guest-search" class="form-label">Digite seu nome para localizar seu convite *</label>
+          <div class="search-input-wrapper">
+            <input
+              type="text"
+              id="guest-search"
+              class="form-input"
+              placeholder="Ex: Marlene Maria, Cristiano, Maria Clara..."
+              autocomplete="off"
+            />
+            <button type="button" id="btn-clear-search" class="btn-clear-search" hidden aria-label="Limpar busca">&times;</button>
           </div>
+          <p class="form-helper">Digite pelo menos 2 letras do seu nome e toque no seu nome na lista abaixo.</p>
+
+          <!-- Lista de resultados da busca -->
+          <div id="search-results" class="search-results" hidden></div>
         </div>
 
-        <div class="form-group">
-          <label for="guest-name" class="form-label">Seu Nome Completo *</label>
-          <input
-            type="text"
-            id="guest-name"
-            name="nome"
-            class="form-input"
-            placeholder="Ex: Maria Oliveira Silva"
-            required
-            autocomplete="name"
-          />
-        </div>
-
-        <div class="form-group" id="companions-group">
-          <div class="companions-header">
-            <label class="form-label">Acompanhantes (Opcional)</label>
-            <button type="button" class="btn-add-companion" id="btn-add-companion">
-              + Adicionar acompanhante
-            </button>
+        <!-- Etapa 2: Grupo / Família selecionada -->
+        <div id="family-section" class="family-section" hidden>
+          <div class="family-header">
+            <div>
+              <span id="family-badge" class="family-badge">Convite Família</span>
+              <h3 id="family-title" class="family-title">Pessoas do seu convite</h3>
+            </div>
+            <button type="button" id="btn-change-guest" class="btn-change-guest">Trocar nome</button>
           </div>
-          <p class="form-helper">Caso vá levar cônjuge ou filhos convidados, adicione o nome de cada um abaixo:</p>
-          
-          <div id="companions-list" class="companions-list">
-            <!-- Inputs dinâmicos de acompanhantes entram aqui -->
+          <p class="form-helper">Selecione <strong>Vai</strong> ou <strong>Não vai</strong> para cada pessoa abaixo:</p>
+
+          <div id="family-members-list" class="family-members-list">
+            <!-- Membros da família gerados via JS -->
           </div>
         </div>
 
         <div id="form-feedback" class="form-feedback" hidden></div>
 
-        <button type="submit" class="btn-submit" id="btn-submit">
+        <button type="submit" class="btn-submit" id="btn-submit" disabled>
           <span class="btn-text">Confirmar Presença</span>
           <span class="btn-spinner" hidden></span>
         </button>
