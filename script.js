@@ -1,5 +1,5 @@
 /**
- * CONFIGURAÇÃO DO CONVITE INTERATIVO - BENJAMIN & CARLA
+ * CONFIGURAÇÃO DO CONVITE INTERATIVO - BENJAMIM & CARLA
  * -----------------------------------------------------
  * 1. GOOGLE_FORM_PREFILLED_URL: Já configurada com o seu Google Forms atual!
  * 2. GOOGLE_SHEETS_WEBAPP_URL: (Opcional) Caso queira atualizar direto nas linhas da planilha
@@ -11,7 +11,7 @@ const CONFIG = {
     'https://docs.google.com/forms/d/e/1FAIpQLSeFA8II7NAyql8vrPR4LR3_5jYhvFWZfQr1PT3DESUCmkdsRg/viewform?usp=pp_url&entry.1555882=Sim&entry.1743792628=teste',
   GOOGLE_SHEETS_WEBAPP_URL: '',
   GIFTS_LIST_URL:
-    'https://www.amazon.com.br/hz/wishlist/dl/invite/AQICAHild4Vpadjqcz7bdgUf6Qu6-OaRt7P_FJRNNbyMlg-OQwERYRo4Jgj8oCfaAwMu17UWAAAAkTCBjgYJKoZIhvcNAQcGoIGAMH4CAQAweQYJKoZIhvcNAQcBMB4GCWCGSAFlAwQBLjARBAz9tMyRRaO_UmS7d_4CARCATNVV-Lq83ngC-df7w8NAXlR64DToVjTMSXGu3PtQ3ApSbi1sEOms73CLmMB4ESND5sRCs-RA15i_SaUpb8Yl2hsTrW4-9EcpFZhusAM?ref_=wl_share',
+    'https://www.amazon.com.br/hz/wishlist/ls/3E4QPQ1WZNYHX?ref_=wl_share',
 };
 
 /**
