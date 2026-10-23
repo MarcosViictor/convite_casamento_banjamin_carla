@@ -46,14 +46,15 @@ function doPost(e) {
           var colId = String(values[r][3] || '').trim();
           var nomeBusca = String(m.nome || '').trim().toLowerCase();
 
-          if (colId === String(m.id) || colConvidado === nomeBusca || colAcompanhante === nomeBusca) {
-            if (colAcompanhante === nomeBusca && m.isAcompanhante) {
+          if (m.isAcompanhante) {
+            if (colAcompanhante === nomeBusca || colId === String(m.id)) {
               // Coluna F (6): Status do Acompanhante daquela linha
               mainSheet.getRange(r + 1, 6).setValue(m.nome + ': ' + statusTexto + ' (' + dataHora + ')');
-            } else {
-              // Coluna E (5): Status do Convidado daquela linha
-              mainSheet.getRange(r + 1, 5).setValue(m.nome + ': ' + statusTexto + ' (' + dataHora + ')');
+              break;
             }
+          } else if (colId === String(m.id) || colConvidado === nomeBusca) {
+            // Coluna E (5): Status do Convidado daquela linha
+            mainSheet.getRange(r + 1, 5).setValue(m.nome + ': ' + statusTexto + ' (' + dataHora + ')');
             break;
           }
         }

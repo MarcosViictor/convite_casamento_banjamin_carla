@@ -153,8 +153,9 @@ const GUEST_GROUPS = [
     id: 15,
     tipo: 'Família',
     membros: [
-      { id: 45, nome: 'Gilvanira Pereira' },
-      { id: 46, nome: 'Luis' },
+      { id: 45, nome: 'Renata Jacó' },
+      { id: 46, nome: 'Marcelo' },
+      { id: 45, nome: 'Matheus', isAcompanhante: true },
     ],
   },
   {
@@ -267,7 +268,7 @@ const GUEST_GROUPS = [
     id: 31,
     tipo: 'Família',
     membros: [
-      { id: 73, nome: 'Antônio Martiniano Matias' },
+      { id: 73, nome: 'Antônio Martiniano Neto' },
       { id: 74, nome: 'Sandra Maria Matias' },
     ],
   },
