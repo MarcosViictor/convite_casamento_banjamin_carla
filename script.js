@@ -572,6 +572,14 @@ const GUEST_GROUPS = [
       { id: 159, nome: 'Pedro' },
     ],
   },
+  {
+    id: 68,
+    tipo: 'Família',
+    membros: [
+      { id: 160, nome: 'Cícero Valério Alves Vieira' },
+      { id: 161, nome: 'Sandra Maria Coelho Alves' },
+    ],
+  },
 ];
 
 /**
